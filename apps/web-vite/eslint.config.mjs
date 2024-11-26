@@ -4,6 +4,8 @@ import eslintTypescriptConfig from '@envoy1084/style-guide/eslint/flat/typescrip
 import pluginRouter from '@tanstack/eslint-plugin-router';
 import { configs } from 'typescript-eslint';
 
+// eslint-disable-next-line tsdoc/syntax -- for type safety
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   ...eslintRecommendedConfig,
   ...eslintTypescriptConfig,

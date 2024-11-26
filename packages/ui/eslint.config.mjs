@@ -1,10 +1,14 @@
 import eslintRecommendedConfig from '@envoy1084/style-guide/eslint/flat/_base';
+import eslintReactConfig from '@envoy1084/style-guide/eslint/flat/react';
 import eslintTypescriptConfig from '@envoy1084/style-guide/eslint/flat/typescript';
 import { configs } from 'typescript-eslint';
 
+// eslint-disable-next-line tsdoc/syntax -- for type safety
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   ...eslintRecommendedConfig,
   ...eslintTypescriptConfig,
+  ...eslintReactConfig,
   ...configs.recommendedTypeChecked,
   {
     languageOptions: {
@@ -34,6 +38,22 @@ export default [
         { checksVoidReturn: { attributes: false } },
       ],
       '@typescript-eslint/restrict-template-expressions': ['warn'],
+      'react/function-component-definition': [
+        'warn',
+        {
+          namedComponents: 'arrow-function',
+          unnamedComponents: 'arrow-function',
+        },
+      ],
+      'react/jsx-sort-props': [
+        'warn',
+        {
+          callbacksLast: true,
+          shorthandFirst: true,
+          multiline: 'last',
+          reservedFirst: true,
+        },
+      ],
       'import/order': [
         'off',
         {
@@ -45,7 +65,7 @@ export default [
   },
   {
     ...configs.disableTypeChecked,
-    files: ['*.js?(x)', '*.cjs', '*.mjs'],
+    files: ['*.js?(x)', '*.mjs'],
   },
   {
     files: ['*.config.{mjs,ts,cjs,js,ts}', 'src/app/**/*.tsx'],

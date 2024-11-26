@@ -2,7 +2,7 @@ import prettierOptions from '@envoy1084/style-guide/prettier';
 
 const config = {
   ...prettierOptions,
-  plugins: [...prettierOptions.plugins],
+  plugins: [...prettierOptions.plugins, 'prettier-plugin-tailwindcss'],
   trailingComma: 'es5',
   tabWidth: 2,
   semi: true,
