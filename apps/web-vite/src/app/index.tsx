@@ -8,6 +8,14 @@ const HomeComponent = () => {
   );
 };
 
+
+
+
+
+
+
+
+
 export const Route = createFileRoute('/')({
   component: HomeComponent,
 });
