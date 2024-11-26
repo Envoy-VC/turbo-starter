@@ -1,6 +1,7 @@
 import eslintRecommendedConfig from '@envoy1084/style-guide/eslint/flat/_base';
 import eslintReactConfig from '@envoy1084/style-guide/eslint/flat/react';
 import eslintTypescriptConfig from '@envoy1084/style-guide/eslint/flat/typescript';
+import pluginQuery from '@tanstack/eslint-plugin-query';
 import pluginRouter from '@tanstack/eslint-plugin-router';
 import { configs } from 'typescript-eslint';
 
@@ -11,6 +12,7 @@ export default [
   ...eslintTypescriptConfig,
   ...eslintReactConfig,
   ...pluginRouter.configs['flat/recommended'],
+  ...pluginQuery.configs['flat/recommended'],
   ...configs.recommendedTypeChecked,
   {
     languageOptions: {
