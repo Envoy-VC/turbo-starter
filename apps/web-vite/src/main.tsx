@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client';
 
+import '@repo/ui/globals.css';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 
 import { routeTree } from './route-tree.gen';
-import './styles/globals.css';
 
 // Set up a Router instance
 const router = createRouter({
