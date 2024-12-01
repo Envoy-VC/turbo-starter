@@ -4,10 +4,7 @@ import prettierOptions from '@envoy1084/style-guide/prettier';
 /** @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions} */
 const config = {
   ...prettierOptions,
-  plugins: [
-    ...prettierOptions.plugins,
-    // 'prettier-plugin-tailwindcss'
-  ],
+  plugins: [...prettierOptions.plugins, 'prettier-plugin-tailwindcss'],
   tailwindFunctions: ['clsx', 'cva'],
   trailingComma: 'es5',
   tabWidth: 2,
