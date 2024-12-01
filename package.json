@@ -20,7 +20,7 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,json,js,jsx,cjs,mjs}": [
-      "prettier . --write --cache"
+      ""
     ]
   },
   "packageManager": "pnpm@8.15.6",
