@@ -6,8 +6,7 @@ export const env = createEnv({
     NODE_ENV: z.enum(['development', 'test', 'production']),
   },
   client: {},
-  experimental__runtimeEnv: {
-  },
+  experimental__runtimeEnv: {},
   // eslint-disable-next-line no-undef -- we know that process is defined
   skipValidation: Boolean(process.env.SKIP_ENV_VALIDATION),
   emptyStringAsUndefined: true,

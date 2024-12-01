@@ -40,5 +40,5 @@
     "src/env.js",
     "**/*.js"
   ],
-  "exclude": ["node_modules", "**/*.mjs"]
+  "exclude": ["node_modules", "**/*.mjs", "**/*.js"]
 }
