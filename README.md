@@ -52,11 +52,6 @@
 
 [![Demo Video](https://img.youtube.com/vi/video_id/0.jpg)](https://www.youtube.com/watch?v=video_id)
 
-## 🧑🏼‍💻 Tech Stack
-
-- **Frontend**: Next.js, Tailwind CSS, `@shadcn/ui`
-- **Integration**: `wagmi`, `web3modal`
-
 ## Get Started 🚀
 
 The following repository is a turborepo and divided into the following:
@@ -71,7 +66,7 @@ pnpm install
 
 ```
 
-Then fill in the Environment variables in `apps/www/.env.local`
+Then fill in the Environment variables in `apps/wwwebwew/.env.local`
 
 ```bash
 
