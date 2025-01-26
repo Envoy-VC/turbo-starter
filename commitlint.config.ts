@@ -1,50 +1,50 @@
 export default {
-  extends: ["@commitlint/config-conventional"],
+  extends: ['@commitlint/config-conventional'],
   rules: {
-    "type-enum": [
+    'type-enum': [
       2,
-      "always",
+      'always',
       [
         // Changes that affect the build system or dependency-only changes
-        "build",
+        'build',
         // Changes to CI workflows
-        "ci",
+        'ci',
         // Documentation-only changes
-        "docs",
+        'docs',
         // A new feature
-        "feat",
+        'feat',
         //A bug fix
-        "fix",
+        'fix',
         // A code change that improves performance
-        "perf",
+        'perf',
         // A code change that neither fixes a bug nor adds a feature
-        "refactor",
+        'refactor',
         // A commit that reverts a previous commit
-        "revert",
+        'revert',
         // Changes that do not affect the meaning of the code
-        "style",
+        'style',
         // Adding missing tests or correcting existing tests
-        "test",
+        'test',
         // Used for automated releases-only
-        "release",
+        'release',
         // Used for automated versioning-only
-        "version",
+        'version',
         // Used for automated formatting-only
-        "format",
+        'format',
         // Used for all other changes
-        "chore",
+        'chore',
       ],
     ],
-    "scope-enum": [
+    'scope-enum': [
       2,
-      "always",
+      'always',
       [
         // Dependency-related changes
-        "deps",
+        'deps',
         // Websites-related changes
-        "web",
+        'web',
       ],
     ],
-    "scope-empty": [1, "never"],
+    'scope-empty': [1, 'never'],
   },
 };
