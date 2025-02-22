@@ -7,7 +7,8 @@
     "lint": "turbo lint",
     "commitlint": "commitlint --edit",
     "format": "pnpm biome format",
-    "format:write": "pnpm biome format --write"
+    "format:write": "pnpm biome format --write",
+    "prepare": "lefthook install"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
