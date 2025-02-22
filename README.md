@@ -2,10 +2,10 @@
 
 This is a starter kit for bootstrapping full-stack applications with Turborepo. This starter kit is designed to be used with [TurboRepo](https://turborepo.org) and other accompanying starter kits. These are:
 
-- [Next Starter Kit](https://github.com/Envoy-VC/next-starter): https://github.com/Envoy-VC/next-starter
-- [Vite Starter Kit](https://github.com/Envoy-VC/vite-starter): https://github.com/Envoy-VC/vite-starter
-- [Package Starter Kit](https://github.com/Envoy-VC/package-starter): https://github.com/Envoy-VC/package-starter
-- [@shadcn/ui monorepo](https://github.com/Envoy-VC/shadcn-ui-monorepo): https://github.com/Envoy-VC/shadcn-ui-monorepo
+- [Next Starter Kit](https://github.com/Envoy-VC/next-starter): End-to-End Type-safe Next.js Starter Kit
+- [Vite Starter Kit](https://github.com/Envoy-VC/vite-starter): Vite Starter Kit using `@tanstack/router`
+- [Package Starter Kit](https://github.com/Envoy-VC/package-starter): Library Starter Kit using `tsup` and `vitest`
+- [@shadcn/ui monorepo](https://github.com/Envoy-VC/shadcn-ui-monorepo): Monorepo `@shadcn/ui` setup
 
 # Features
 
