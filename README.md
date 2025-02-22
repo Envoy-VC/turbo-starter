@@ -1,79 +1,43 @@
-<p align="center">
-<img src="./assets/logo.svg" alt=""  width="200px"/></p>
+# Turbo Starter
 
-## Architecture 🏗️
+This is a starter kit for bootstrapping full-stack applications with Turborepo. This starter kit is designed to be used with [TurboRepo](https://turborepo.org) and other accompanying starter kits. These are:
 
-## How it works 🛠️
+- [Next Starter Kit](https://github.com/Envoy-VC/next-starter): https://github.com/Envoy-VC/next-starter
+- [Vite Starter Kit](https://github.com/Envoy-VC/vite-starter): https://github.com/Envoy-VC/vite-starter
+- [Package Starter Kit](https://github.com/Envoy-VC/package-starter): https://github.com/Envoy-VC/package-starter
+- [@shadcn/ui monorepo](https://github.com/Envoy-VC/shadcn-ui-monorepo): https://github.com/Envoy-VC/shadcn-ui-monorepo
 
-## Screenshots 📸
+# Features
 
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <br>
-      <img src="./assets/1.png" alt="" >
-    </td>
-    <td valign="top" width="50%">
-      <br>
-      <img src="./assets/2.png" alt="" >
-    </td>
-  </tr>
-</table>
+- 🏎️ Uses [turborepo](https://turborepo.org) for monorepo management.
+- 📦 Packages are managed with [pnpm](https://pnpm.io) 
+- 🌎 Uses `@biome/biomejs` for code formatting and linting.
+- ✅ Uses a strict opinionated linting setup using [klarity](https://github.com/Envoy-VC/klarity).
+- 🪝 Uses [lefthook](https://github.com/evilmartians/lefthook) for git hooks.
+- 📝 Uses [commitlint](https://github.com/conventional-changelog/commitlint) for commit message formatting.
 
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <br>
-            <img src="./assets/3.png" alt="" >
-    </td>
-    <td valign="top" width="50%">
-      <br>
-            <img src="./assets/4.png" alt="" >
-    </td>
-  </tr>
-</table>
+# Project Structure
 
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <br>
-            <img src="./assets/5.png" alt="" >
-    </td>
-    <td valign="top" width="50%">
-      <br>
-            <img src="./assets/6.png" alt="" >
-    </td>
-  </tr>
-</table>
-
-## 🎥 Demo Video
-
-[![Demo Video](https://img.youtube.com/vi/video_id/0.jpg)](https://www.youtube.com/watch?v=video_id)
-
-## Get Started 🚀
-
-The following repository is a turborepo and divided into the following:
-
-- **apps/web** - The web application built using NextJS.
-
-First install the dependencies by running the following:
+After combining the Turbo starter kit with `next-starter`, `package-starter`, and `shadcn-ui-monorepo` you will have a full-stack application with the following structure:
 
 ```
-
-pnpm install
-
-```
-
-Then fill in the Environment variables in `apps/web/.env.local`
-
-```bash
-
-```
-
-Then run the following command to start the application:
-
-```bash
-pnpm dev
+├── packages
+│   ├── ui
+├── apps
+│   ├── web
+│   └── api
+├── README.md
+├── LICENSE
+├── .gitignore
+├── .npmrc
+├── package.json
+├── tsconfig.json
+├── turbo.json
+├── biome.jsonc
+├── commitlint.config.ts
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── lefthook.yml
 ```
 
 ---
