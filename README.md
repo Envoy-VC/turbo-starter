@@ -5,8 +5,6 @@
 
 ## How it works 🛠️
 
-## Demo Video 🎥
-
 ## Screenshots 📸
 
 <table>
@@ -66,7 +64,7 @@ pnpm install
 
 ```
 
-Then fill in the Environment variables in `apps/wwwebwew/.env.local`
+Then fill in the Environment variables in `apps/web/.env.local`
 
 ```bash
 
